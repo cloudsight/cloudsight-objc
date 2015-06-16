@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CloudSight"
-  s.version      = "0.0.2"
+  s.version      = "1.0"
   s.summary      = "CloudSight image recognition API interface in Objective-C"
 
   s.description  = <<-DESC
