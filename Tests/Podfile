@@ -1,0 +1,15 @@
+inhibit_all_warnings!
+
+workspace '../CloudSight'
+xcodeproj 'CloudSight Tests'
+
+pod 'CloudSight', :path => '../'
+
+# Dependencies
+pod 'BFOAuth', '~> 1.0'
+pod 'RequestUtils', '~> 1.1'
+
+# Testing
+pod 'OHHTTPStubs'
+pod 'OCMock'
+

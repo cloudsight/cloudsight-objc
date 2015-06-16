@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:CloudSight"
+      name = "CloudSight">
+      <FileRef
+         location = "group:CloudSight.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightConnection.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightConnection.m">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightDelete.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightDelete.m">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightImageRequest.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightImageRequest.m">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightImageRequestDelegate.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightImageResponse.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightImageResponse.m">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightQuery.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightQuery.m">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightQueryDelegate.h">
+      </FileRef>
+      <FileRef
+         location = "group:CloudSightUploadProgressDelegate.h">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Tests/CloudSight Tests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tests/Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
