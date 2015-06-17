@@ -27,7 +27,7 @@ The easiest way to use the API is to use a Query object to handle the request/re
 
 ```objective-c
 - (void)searchWithImage:(UIImage *)image {
-    NSString *deviceIdentifier = "bfffef30-8e9dbdbf-641bf0e-940eb290";  // This can be any unique identifier, and is optional
+    NSString *deviceIdentifier = nil;  // This can be any unique identifier per device, and is optional - we like to use UUIDs
     CLLocation *location = nil; // you can use the CLLocationManager to determine the user's location
 
     // We recommend sending a JPG image no larger than 1024x1024 and with a 0.7-0.8 compression quality,
