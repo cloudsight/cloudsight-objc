@@ -21,7 +21,7 @@ The CloudSight library uses the OAuth1 authentication method to the API.  Make s
 [CloudSightConnection sharedInstance].consumerSecret = @"your-secret";
 ```
 
-### Create a query object
+### Using the query object
 
 The easiest way to use the API is to use a Query object to handle the request/response workflow work for you.
 
