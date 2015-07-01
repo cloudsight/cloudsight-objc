@@ -103,7 +103,7 @@ NSString *const kTPImageResponseURL = @"http://api.cloudsightapi.com/image_respo
                 taggedImageString = @"";
             
             [query setSkipReason:taggedImageString];
-            
+
             [[self delegate] cloudSightQueryDidFinishIdentifying:query];
         } else if ([taggedImageStatus isEqualToString:@"in progress"] || [taggedImageStatus isEqualToString:@"completed"]) {
             NSString *taggedImageString = [dict objectForKey:@"name"];
@@ -114,7 +114,9 @@ NSString *const kTPImageResponseURL = @"http://api.cloudsightapi.com/image_respo
             
             if ([taggedImageStatus isEqualToString:@"in progress"]) {
                 [self restart];
-                [[self delegate] cloudSightQueryDidUpdateTag:query];
+                if ([self.delegate respondsToSelector:@selector(cloudSightQueryDidUpdateTag:)]) {
+                    [[self delegate] cloudSightQueryDidUpdateTag:query];
+                }
             } else {
                 [[self delegate] cloudSightQueryDidFinishIdentifying:query];
             }

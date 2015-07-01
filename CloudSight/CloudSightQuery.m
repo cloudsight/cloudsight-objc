@@ -58,7 +58,9 @@
     self.token = token;
     self.remoteUrl = url;
     
-    [self.queryDelegate cloudSightQueryDidFinishUploading:self];
+    if ([self.queryDelegate respondsToSelector:@selector(cloudSightQueryDidFinishUploading:)]) {
+        [self.queryDelegate cloudSightQueryDidFinishUploading:self];
+    }
 }
 
 - (void)cloudSightRequest:(CloudSightImageRequest *)sender didFailWithError:(NSError *)error

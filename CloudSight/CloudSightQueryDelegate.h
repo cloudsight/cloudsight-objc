@@ -28,9 +28,11 @@
 
 @protocol CloudSightQueryDelegate <NSObject>
 
-- (void)cloudSightQueryDidFinishUploading:(CloudSightQuery *)query;
+@optional
+
 - (void)cloudSightQueryDidFinishIdentifying:(CloudSightQuery *)query;
-- (void)cloudSightQueryDidUpdateTag:(CloudSightQuery *)query;
 - (void)cloudSightQueryDidFail:(CloudSightQuery *)query withError:(NSError *)error;
+- (void)cloudSightQueryDidUpdateTag:(CloudSightQuery *)query;
+- (void)cloudSightQueryDidFinishUploading:(CloudSightQuery *)query;
 
 @end
