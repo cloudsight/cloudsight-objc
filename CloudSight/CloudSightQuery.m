@@ -53,7 +53,6 @@
 - (void)cloudSightRequest:(CloudSightImageRequest *)sender didReceiveToken:(NSString *)token withRemoteURL:(NSString *)url
 {
     self.response = [[CloudSightImageResponse alloc] initWithToken:token withDelegate:self.queryDelegate forQuery:self];
-    self.response.loadPartialResponse = self.loadPartialResponse;
     [self.response pollForResponse];
     
     self.token = token;

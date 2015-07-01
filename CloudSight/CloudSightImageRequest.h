@@ -43,7 +43,6 @@ static const int kTPImageRequestTroubleError = 9011;
 @property (nonatomic, retain) NSString *remoteUrl;
 @property (nonatomic, retain) NSData *image;
 @property (nonatomic, assign) CGPoint location;
-@property (nonatomic, assign) BOOL privateFlag;
 
 @property (nonatomic, retain) CLLocation *placemark;
 @property (nonatomic, retain) NSString *deviceId;
