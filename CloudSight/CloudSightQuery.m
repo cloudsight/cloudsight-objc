@@ -84,7 +84,10 @@
     NSError *error = [NSError errorWithDomain:[[NSBundle bundleForClass:self.class] bundleIdentifier]
                                          code:kTPQueryCancelledError
                                      userInfo:@{NSLocalizedDescriptionKey : @"User cancelled request"}];
-    [self.queryDelegate cloudSightQueryDidFail:self withError:error];
+
+    if ([self.queryDelegate respondsToSelector:@selector(cloudSightQueryDidFail:withError:)]) {
+        [self.queryDelegate cloudSightQueryDidFail:self withError:error];
+    }
 }
 
 - (NSString *)description

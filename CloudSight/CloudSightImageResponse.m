@@ -50,7 +50,9 @@ NSString *const kTPImageResponseURL = @"https://api.cloudsightapi.com/image_resp
                                          code:code
                                      userInfo:@{NSLocalizedDescriptionKey : message}];
     
-    [[self delegate] cloudSightQueryDidFail:query withError:error];
+    if ([[self delegate] respondsToSelector:@selector(cloudSightQueryDidFail:withError:)]) {
+        [[self delegate] cloudSightQueryDidFail:query withError:error];
+    }
 }
 
 - (void)pollForResponse
@@ -104,7 +106,9 @@ NSString *const kTPImageResponseURL = @"https://api.cloudsightapi.com/image_resp
             
             [query setSkipReason:taggedImageString];
 
-            [[self delegate] cloudSightQueryDidFinishIdentifying:query];
+            if ([[self delegate] respondsToSelector:@selector(cloudSightQueryDidFinishIdentifying:)]) {
+                [[self delegate] cloudSightQueryDidFinishIdentifying:query];
+            }
         } else if ([taggedImageStatus isEqualToString:@"in progress"] || [taggedImageStatus isEqualToString:@"completed"]) {
             NSString *taggedImageString = [dict objectForKey:@"name"];
             if ([taggedImageString isKindOfClass:[NSNull class]])
@@ -118,7 +122,9 @@ NSString *const kTPImageResponseURL = @"https://api.cloudsightapi.com/image_resp
                     [[self delegate] cloudSightQueryDidUpdateTag:query];
                 }
             } else {
-                [[self delegate] cloudSightQueryDidFinishIdentifying:query];
+                if ([[self delegate] respondsToSelector:@selector(cloudSightQueryDidFinishIdentifying:)]) {
+                    [[self delegate] cloudSightQueryDidFinishIdentifying:query];
+                }
             }
         } else if ([taggedImageStatus isEqualToString:@"timeout"]) {
             [self handleErrorForCode:kTPImageResponseTimeoutError withMessage:@"Timeout, please try again"];
