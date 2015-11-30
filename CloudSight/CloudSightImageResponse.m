@@ -27,7 +27,7 @@
 #import "CloudSightQuery.h"
 #import "CloudSightConnection.h"
 
-NSString *const kTPImageResponseURL = @"http://api.cloudsightapi.com/image_responses/%@";
+NSString *const kTPImageResponseURL = @"https://api.cloudsightapi.com/image_responses/%@";
 
 @implementation CloudSightImageResponse
 

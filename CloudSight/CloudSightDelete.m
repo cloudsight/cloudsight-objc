@@ -27,7 +27,7 @@
 #import "CloudSightConnection.h"
 #import "CloudSightDelete.h"
 
-NSString *const kTPImageDeleteURL = @"http://api.cloudsightapi.com/image_requests/%@";
+NSString *const kTPImageDeleteURL = @"https://api.cloudsightapi.com/image_requests/%@";
 
 @implementation CloudSightDelete
 

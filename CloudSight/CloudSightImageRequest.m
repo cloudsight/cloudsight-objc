@@ -26,7 +26,7 @@
 #import "CloudSightConnection.h"
 #import "CloudSightImageRequest.h"
 
-NSString *const kTPImageRequestURL = @"http://api.cloudsightapi.com/image_requests";
+NSString *const kTPImageRequestURL = @"https://api.cloudsightapi.com/image_requests";
 
 @implementation CloudSightImageRequest
 
