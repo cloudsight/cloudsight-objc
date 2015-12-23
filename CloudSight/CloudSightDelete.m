@@ -57,7 +57,9 @@ NSString *const kTPImageDeleteURL = @"https://api.cloudsightapi.com/image_reques
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:deleteUrl]];
     [request setHTTPMethod:kBFOAuthDELETERequestMethod];
-    NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:nil];
+    NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        // Ignore
+    }];
 
     [task resume];
     [session finishTasksAndInvalidate];
