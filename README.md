@@ -26,6 +26,10 @@ The CloudSight library uses the OAuth1 authentication method to the API.  Make s
 The easiest way to use the API is to use a Query object to handle the request/response workflow work for you.
 
 ```objective-c
+@interface ViewController ()
+@property (nonatomic, retain) CloudSightQuery *query;
+@end
+
 - (void)searchWithImage:(UIImage *)image {
     NSString *deviceIdentifier = nil;  // This can be any unique identifier per device, and is optional - we like to use UUIDs
     CLLocation *location = nil; // you can use the CLLocationManager to determine the user's location
@@ -35,14 +39,14 @@ The easiest way to use the API is to use a Query object to handle the request/re
     NSData *imageData = UIImageJPEGRepresentation(image, 0.7);
 
     // Create the actual query object
-    CloudSightQuery *query = [[CloudSightQuery alloc] initWithImage:imageData
-                                                         atLocation:focalPoint
-                                                       withDelegate:self
-                                                        atPlacemark:location
-                                                       withDeviceId:deviceIdentifier];
+    self.query = [[CloudSightQuery alloc] initWithImage:imageData
+                                             atLocation:focalPoint
+                                           withDelegate:self
+                                            atPlacemark:location
+                                           withDeviceId:deviceIdentifier];
 
     // Start the query process
-    [query start];
+    [self.query start];
 }
 
 #pragma mark CloudSightQueryDelegate
