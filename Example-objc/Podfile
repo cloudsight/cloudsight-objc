@@ -1,0 +1,21 @@
+platform :ios, '9.0'
+
+target 'CloudSightExample' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  pod 'CloudSight', '~> 1.0'
+
+  # Pods for CloudSightExample
+
+  target 'CloudSightExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CloudSightExampleUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

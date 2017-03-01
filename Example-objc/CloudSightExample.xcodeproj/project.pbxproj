@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C91ACA5DD4E434C9C631902 /* libPods-CloudSightExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9960CEEA0771BD20FC8D65 /* libPods-CloudSightExampleUITests.a */; };
+		6777569B1E672EB50080653E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777569A1E672EB50080653E /* main.m */; };
+		6777569E1E672EB50080653E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777569D1E672EB50080653E /* AppDelegate.m */; };
+		677756A11E672EB50080653E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677756A01E672EB50080653E /* ViewController.m */; };
+		677756A41E672EB50080653E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677756A21E672EB50080653E /* Main.storyboard */; };
+		677756A91E672EB50080653E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677756A71E672EB50080653E /* LaunchScreen.storyboard */; };
+		677756B41E672EB50080653E /* CloudSightExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677756B31E672EB50080653E /* CloudSightExampleTests.m */; };
+		677756BF1E672EB50080653E /* CloudSightExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677756BE1E672EB50080653E /* CloudSightExampleUITests.m */; };
+		67D953B01E6731FF00770096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D953AF1E6731FF00770096 /* Assets.xcassets */; };
+		A625666BF05FFF38F92A335F /* libPods-CloudSightExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A8D6A038831A0FF9F369B4 /* libPods-CloudSightExample.a */; };
+		FBB4FC42A08C7F4F5D2D69D6 /* libPods-CloudSightExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338F46A8B71D9FC0CF27C24E /* libPods-CloudSightExampleTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		677756B01E672EB50080653E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6777568E1E672EB50080653E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 677756951E672EB50080653E;
+			remoteInfo = CloudSightExample;
+		};
+		677756BB1E672EB50080653E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6777568E1E672EB50080653E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 677756951E672EB50080653E;
+			remoteInfo = CloudSightExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19313F44A60588764783125B /* Pods-CloudSightExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		28A8D6A038831A0FF9F369B4 /* libPods-CloudSightExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudSightExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		338F46A8B71D9FC0CF27C24E /* libPods-CloudSightExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudSightExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		366C04A97B5A3A802E510167 /* Pods-CloudSightExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		607C7D0F9FB6D9FDABB540C9 /* Pods-CloudSightExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample.release.xcconfig"; sourceTree = "<group>"; };
+		677756961E672EB50080653E /* CloudSightExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSightExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6777569A1E672EB50080653E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6777569C1E672EB50080653E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6777569D1E672EB50080653E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6777569F1E672EB50080653E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		677756A01E672EB50080653E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		677756A31E672EB50080653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		677756A81E672EB50080653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		677756AA1E672EB50080653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		677756AF1E672EB50080653E /* CloudSightExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudSightExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		677756B31E672EB50080653E /* CloudSightExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSightExampleTests.m; sourceTree = "<group>"; };
+		677756B51E672EB50080653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		677756BA1E672EB50080653E /* CloudSightExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudSightExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		677756BE1E672EB50080653E /* CloudSightExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSightExampleUITests.m; sourceTree = "<group>"; };
+		677756C01E672EB50080653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D953AF1E6731FF00770096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1B0A8F27702ECE326A36C8A /* Pods-CloudSightExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B442E538A02E62BF47EAC11E /* Pods-CloudSightExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9960CEEA0771BD20FC8D65 /* libPods-CloudSightExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudSightExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D76306DD4979939627783B /* Pods-CloudSightExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		677756931E672EB50080653E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A625666BF05FFF38F92A335F /* libPods-CloudSightExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677756AC1E672EB50080653E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB4FC42A08C7F4F5D2D69D6 /* libPods-CloudSightExampleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677756B71E672EB50080653E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C91ACA5DD4E434C9C631902 /* libPods-CloudSightExampleUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6071B0C23296380F6619E39D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A8D6A038831A0FF9F369B4 /* libPods-CloudSightExample.a */,
+				338F46A8B71D9FC0CF27C24E /* libPods-CloudSightExampleTests.a */,
+				DA9960CEEA0771BD20FC8D65 /* libPods-CloudSightExampleUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6777568D1E672EB50080653E = {
+			isa = PBXGroup;
+			children = (
+				677756981E672EB50080653E /* CloudSightExample */,
+				677756B21E672EB50080653E /* CloudSightExampleTests */,
+				677756BD1E672EB50080653E /* CloudSightExampleUITests */,
+				677756971E672EB50080653E /* Products */,
+				CCFB0B7E959773AC96EBE136 /* Pods */,
+				6071B0C23296380F6619E39D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		677756971E672EB50080653E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				677756961E672EB50080653E /* CloudSightExample.app */,
+				677756AF1E672EB50080653E /* CloudSightExampleTests.xctest */,
+				677756BA1E672EB50080653E /* CloudSightExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		677756981E672EB50080653E /* CloudSightExample */ = {
+			isa = PBXGroup;
+			children = (
+				6777569C1E672EB50080653E /* AppDelegate.h */,
+				6777569D1E672EB50080653E /* AppDelegate.m */,
+				67D953AF1E6731FF00770096 /* Assets.xcassets */,
+				677756AA1E672EB50080653E /* Info.plist */,
+				677756A71E672EB50080653E /* LaunchScreen.storyboard */,
+				677756A21E672EB50080653E /* Main.storyboard */,
+				677756991E672EB50080653E /* Supporting Files */,
+				6777569F1E672EB50080653E /* ViewController.h */,
+				677756A01E672EB50080653E /* ViewController.m */,
+			);
+			path = CloudSightExample;
+			sourceTree = "<group>";
+		};
+		677756991E672EB50080653E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6777569A1E672EB50080653E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		677756B21E672EB50080653E /* CloudSightExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				677756B31E672EB50080653E /* CloudSightExampleTests.m */,
+				677756B51E672EB50080653E /* Info.plist */,
+			);
+			path = CloudSightExampleTests;
+			sourceTree = "<group>";
+		};
+		677756BD1E672EB50080653E /* CloudSightExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				677756BE1E672EB50080653E /* CloudSightExampleUITests.m */,
+				677756C01E672EB50080653E /* Info.plist */,
+			);
+			path = CloudSightExampleUITests;
+			sourceTree = "<group>";
+		};
+		CCFB0B7E959773AC96EBE136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0A8F27702ECE326A36C8A /* Pods-CloudSightExample.debug.xcconfig */,
+				607C7D0F9FB6D9FDABB540C9 /* Pods-CloudSightExample.release.xcconfig */,
+				366C04A97B5A3A802E510167 /* Pods-CloudSightExampleTests.debug.xcconfig */,
+				19313F44A60588764783125B /* Pods-CloudSightExampleTests.release.xcconfig */,
+				B442E538A02E62BF47EAC11E /* Pods-CloudSightExampleUITests.debug.xcconfig */,
+				F5D76306DD4979939627783B /* Pods-CloudSightExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		677756951E672EB50080653E /* CloudSightExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 677756C31E672EB50080653E /* Build configuration list for PBXNativeTarget "CloudSightExample" */;
+			buildPhases = (
+				9F0838889818DFB55D66081F /* [CP] Check Pods Manifest.lock */,
+				677756921E672EB50080653E /* Sources */,
+				677756931E672EB50080653E /* Frameworks */,
+				677756941E672EB50080653E /* Resources */,
+				00D7BA115CBAECFA6D9C499B /* [CP] Embed Pods Frameworks */,
+				4F2A530E0A72CD331BABE8E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudSightExample;
+			productName = CloudSightExample;
+			productReference = 677756961E672EB50080653E /* CloudSightExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		677756AE1E672EB50080653E /* CloudSightExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 677756C61E672EB50080653E /* Build configuration list for PBXNativeTarget "CloudSightExampleTests" */;
+			buildPhases = (
+				00E9E3E825488BA242A0EBBD /* [CP] Check Pods Manifest.lock */,
+				677756AB1E672EB50080653E /* Sources */,
+				677756AC1E672EB50080653E /* Frameworks */,
+				677756AD1E672EB50080653E /* Resources */,
+				3788E27C09357173F911371C /* [CP] Embed Pods Frameworks */,
+				E3B07B49E83190A3CEE9381A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				677756B11E672EB50080653E /* PBXTargetDependency */,
+			);
+			name = CloudSightExampleTests;
+			productName = CloudSightExampleTests;
+			productReference = 677756AF1E672EB50080653E /* CloudSightExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		677756B91E672EB50080653E /* CloudSightExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 677756C91E672EB50080653E /* Build configuration list for PBXNativeTarget "CloudSightExampleUITests" */;
+			buildPhases = (
+				7CBA72D8A04761622A09DD0B /* [CP] Check Pods Manifest.lock */,
+				677756B61E672EB50080653E /* Sources */,
+				677756B71E672EB50080653E /* Frameworks */,
+				677756B81E672EB50080653E /* Resources */,
+				B1D28BE55D073053177FB532 /* [CP] Embed Pods Frameworks */,
+				6836B7D76876839FC7CC090B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				677756BC1E672EB50080653E /* PBXTargetDependency */,
+			);
+			name = CloudSightExampleUITests;
+			productName = CloudSightExampleUITests;
+			productReference = 677756BA1E672EB50080653E /* CloudSightExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6777568E1E672EB50080653E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "CloudSight Inc";
+				TargetAttributes = {
+					677756951E672EB50080653E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					677756AE1E672EB50080653E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 677756951E672EB50080653E;
+					};
+					677756B91E672EB50080653E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 677756951E672EB50080653E;
+					};
+				};
+			};
+			buildConfigurationList = 677756911E672EB50080653E /* Build configuration list for PBXProject "CloudSightExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6777568D1E672EB50080653E;
+			productRefGroup = 677756971E672EB50080653E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				677756951E672EB50080653E /* CloudSightExample */,
+				677756AE1E672EB50080653E /* CloudSightExampleTests */,
+				677756B91E672EB50080653E /* CloudSightExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		677756941E672EB50080653E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677756A91E672EB50080653E /* LaunchScreen.storyboard in Resources */,
+				67D953B01E6731FF00770096 /* Assets.xcassets in Resources */,
+				677756A41E672EB50080653E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677756AD1E672EB50080653E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677756B81E672EB50080653E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00D7BA115CBAECFA6D9C499B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		00E9E3E825488BA242A0EBBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3788E27C09357173F911371C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F2A530E0A72CD331BABE8E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6836B7D76876839FC7CC090B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CBA72D8A04761622A09DD0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0838889818DFB55D66081F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1D28BE55D073053177FB532 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B07B49E83190A3CEE9381A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		677756921E672EB50080653E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677756A11E672EB50080653E /* ViewController.m in Sources */,
+				6777569E1E672EB50080653E /* AppDelegate.m in Sources */,
+				6777569B1E672EB50080653E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677756AB1E672EB50080653E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677756B41E672EB50080653E /* CloudSightExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677756B61E672EB50080653E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677756BF1E672EB50080653E /* CloudSightExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		677756B11E672EB50080653E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 677756951E672EB50080653E /* CloudSightExample */;
+			targetProxy = 677756B01E672EB50080653E /* PBXContainerItemProxy */;
+		};
+		677756BC1E672EB50080653E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 677756951E672EB50080653E /* CloudSightExample */;
+			targetProxy = 677756BB1E672EB50080653E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		677756A21E672EB50080653E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				677756A31E672EB50080653E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		677756A71E672EB50080653E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				677756A81E672EB50080653E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		677756C11E672EB50080653E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		677756C21E672EB50080653E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		677756C41E672EB50080653E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B0A8F27702ECE326A36C8A /* Pods-CloudSightExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CloudSightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		677756C51E672EB50080653E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607C7D0F9FB6D9FDABB540C9 /* Pods-CloudSightExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CloudSightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		677756C71E672EB50080653E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366C04A97B5A3A802E510167 /* Pods-CloudSightExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CloudSightExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudSightExample.app/CloudSightExample";
+			};
+			name = Debug;
+		};
+		677756C81E672EB50080653E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19313F44A60588764783125B /* Pods-CloudSightExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CloudSightExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudSightExample.app/CloudSightExample";
+			};
+			name = Release;
+		};
+		677756CA1E672EB50080653E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B442E538A02E62BF47EAC11E /* Pods-CloudSightExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = CloudSightExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CloudSightExample;
+			};
+			name = Debug;
+		};
+		677756CB1E672EB50080653E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D76306DD4979939627783B /* Pods-CloudSightExampleUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = CloudSightExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CloudSightExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		677756911E672EB50080653E /* Build configuration list for PBXProject "CloudSightExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677756C11E672EB50080653E /* Debug */,
+				677756C21E672EB50080653E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		677756C31E672EB50080653E /* Build configuration list for PBXNativeTarget "CloudSightExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677756C41E672EB50080653E /* Debug */,
+				677756C51E672EB50080653E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		677756C61E672EB50080653E /* Build configuration list for PBXNativeTarget "CloudSightExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677756C71E672EB50080653E /* Debug */,
+				677756C81E672EB50080653E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		677756C91E672EB50080653E /* Build configuration list for PBXNativeTarget "CloudSightExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677756CA1E672EB50080653E /* Debug */,
+				677756CB1E672EB50080653E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6777568E1E672EB50080653E /* Project object */;
+}
