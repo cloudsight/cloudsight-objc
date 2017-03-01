@@ -38,6 +38,18 @@ NSString *const kTPImageRequestURL = @"https://api.cloudsightapi.com/image_reque
         self.image = image;
         self.location = location;
         
+        NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
+        NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern:@"@.*"
+                                                                               options:NSRegularExpressionCaseInsensitive
+                                                                                 error:nil];
+        NSString *localeIdentifierWithoutCalendar = [regex stringByReplacingMatchesInString:localeIdentifier
+                                                                                    options:0
+                                                                                      range:NSMakeRange(0, [localeIdentifier length])
+                                                                               withTemplate:@""];
+
+        self.locale = localeIdentifierWithoutCalendar;
+        self.language = [[NSLocale preferredLanguages] objectAtIndex:0];
+        
         self.placemark = placemark;
         self.deviceId = deviceId;
         
@@ -49,23 +61,18 @@ NSString *const kTPImageRequestURL = @"https://api.cloudsightapi.com/image_reque
 
 - (NSDictionary *)buildRequestParameters
 {
-    NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
-    NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern:@"@.*"
-                                                                           options:NSRegularExpressionCaseInsensitive
-                                                                             error:nil];
-    NSString *localeIdentifierWithoutCalendar = [regex stringByReplacingMatchesInString:localeIdentifier
-                                                                                options:0
-                                                                                  range:NSMakeRange(0, [localeIdentifier length])
-                                                                           withTemplate:@""];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{
-        @"image_request[locale]" : localeIdentifierWithoutCalendar,
-        @"image_request[language]" : [[NSLocale preferredLanguages] objectAtIndex:0],
-        @"image_request[device_id]" : self.deviceId,
+        @"image_request[locale]" : self.locale,
+        @"image_request[language]" : self.language,
         @"image_request[latitude]" : [NSNumber numberWithDouble:self.placemark.coordinate.latitude],
         @"image_request[longitude]" : [NSNumber numberWithDouble:self.placemark.coordinate.longitude],
         @"image_request[altitude]" : [NSNumber numberWithDouble:self.placemark.altitude]
     }];
+    
+    if (self.deviceId != nil) {
+        [params setValue:self.deviceId forKey:@"image_request[device_id]"];
+    }
     
     if (self.location.x != 0.000000 || self.location.y != 0.000000) {
         NSString *focusX = [[NSString alloc]initWithFormat:@"%f", self.location.x];

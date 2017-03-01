@@ -41,6 +41,8 @@ static const int kTPImageRequestTroubleError = 9011;
 @property (nonatomic, weak) id <CloudSightUploadProgressDelegate> uploadProgressDelegate;
 @property (nonatomic, retain) NSString *token;
 @property (nonatomic, retain) NSString *remoteUrl;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, retain) NSString *locale;
 @property (nonatomic, retain) NSData *image;
 @property (nonatomic, assign) CGPoint location;
 
