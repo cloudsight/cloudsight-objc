@@ -32,7 +32,7 @@ The easiest way to use the API is to use a Query object to handle the request/re
 
     // We recommend sending a JPG image no larger than 1024x1024 and with a 0.7-0.8 compression quality,
     // you can reduce this on a Cellular network to 800x800 at quality = 0.4
-    NSData *imageData = [image imageAsJPEGWithQuality:0.7];
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.7);
 
     // Create the actual query object
     CloudSightQuery *query = [[CloudSightQuery alloc] initWithImage:imageData
