@@ -1,0 +1,18 @@
+PODS:
+  - BFOAuth (1.0.1)
+  - CloudSight (1.0.4):
+    - BFOAuth (~> 1.0)
+    - RequestUtils (~> 1.1)
+  - RequestUtils (1.1.2)
+
+DEPENDENCIES:
+  - CloudSight
+
+SPEC CHECKSUMS:
+  BFOAuth: e3c2e4eaae862a89bc301ed6f292d3cd0d6a107b
+  CloudSight: cbf69900984e30d16498d8282c1cd13b844c0071
+  RequestUtils: 0f04f89abca3936c6566e2f4c3ce5d252036bc89
+
+PODFILE CHECKSUM: 12ef1485f44794e6229e3c10355ff831137aaaca
+
+COCOAPODS: 1.1.1
